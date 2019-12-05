@@ -373,7 +373,6 @@ def emailLogForCourseID(courseID, recipients):
         return
 
     try:
-        READ_BINARY_MODE = 'rb'
         logfile = open(getCourseLogFilePath(courseID))
         logContent = logfile.read()
         logfile.close()
