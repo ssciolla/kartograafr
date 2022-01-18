@@ -6,7 +6,7 @@ RUN pip install -r requirements.txt
 
 # arcgis needs to be installed separately because of issues when including the requirement with a flag in
 # requirements.txt
-RUN pip install arcgis==1.9.0 --no-deps
+RUN pip install arcgis==1.9.1 --no-deps
 
 WORKDIR /kartograafr/
 COPY . /kartograafr/
